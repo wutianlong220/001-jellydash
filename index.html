@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jellydash - Play Free Online Action Game | Jellydash.site</title>
+    <meta name="description" content="Play Jellydash, an addictive online action game. Guide jelly characters through challenging obstacles in this free browser-based game. Perfect for quick gaming sessions!">
+    <meta name="keywords" content="jellydash, jelly dash, online game, action game, free game, browser game, crazygames, jelly game">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jellydash.site">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+            }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hover effects */
+        .play-button {
+            transition: all 0.3s ease;
+        }
+
+        .play-button:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Particle effect background */
+        .particle-bg {
+            background-image:
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen particle-bg">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">J</span>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-800">Jellydash</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#game" class="text-gray-600 hover:text-blue-500 transition-colors">Play Now</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 transition-colors">About</a>
+                    <a href="#features" class="text-gray-600 hover:text-blue-500 transition-colors">Features</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 py-8 md:py-16">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-7xl font-bold gradient-text mb-6">
+                    Jellydash
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-4">
+                    Guide adorable jelly characters through challenging obstacles in this addictive free online action game that will test your reflexes and strategic thinking!
+                </p>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="container mx-auto px-4 py-4 md:py-8">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-8 text-center">
+                    Play Jellydash Online - Start Your Adventure
+                </h2>
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-6 md:p-10">
+                    <div class="relative aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 shadow-inner">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="mb-8">
+                                    <div class="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 float-animation pulse-glow">
+                                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ready to Play?</h3>
+                                    <p class="text-lg md:text-xl text-gray-600 mb-6 max-w-2xl mx-auto">
+                                        Experience the exciting Jellydash adventure! Control cute jelly characters through challenging levels filled with obstacles and surprises.
+                                    </p>
+                                    <p class="text-base md:text-lg text-gray-500 mb-8 max-w-2xl mx-auto">
+                                        This free online action game combines precision timing, strategic thinking, and quick reflexes to create an engaging gaming experience that will keep you entertained for hours.
+                                    </p>
+                                </div>
+                                <a href="https://www.crazygames.com/game/jelly-dash-uki"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="play-button bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-6 px-12 rounded-full text-xl shadow-2xl inline-flex items-center space-x-3">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>🎮 Play Now</span>
+                                </a>
+                                <div class="mt-8 space-y-2">
+                                    <p class="text-sm text-gray-500">
+                                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full mr-2">✓ Free to Play</span>
+                                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full mr-2">✓ No Download</span>
+                                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full">✓ Instant Play</span>
+                                    </p>
+                                    <p class="text-xs text-gray-400">
+                                        Game opens in a new tab • Compatible with PC and mobile
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Decorative elements -->
+                        <div class="absolute top-4 left-4 w-8 h-8 bg-blue-200 rounded-full opacity-60 float-animation"></div>
+                        <div class="absolute top-12 right-8 w-6 h-6 bg-purple-200 rounded-full opacity-60 float-animation" style="animation-delay: 1s;"></div>
+                        <div class="absolute bottom-8 left-12 w-10 h-10 bg-pink-200 rounded-full opacity-60 float-animation" style="animation-delay: 2s;"></div>
+                        <div class="absolute bottom-4 right-4 w-7 h-7 bg-yellow-200 rounded-full opacity-60 float-animation" style="animation-delay: 0.5s;"></div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <div class="bg-blue-50 rounded-lg p-4">
+                            <p class="text-gray-700 font-medium mb-2">
+                                <strong>💡 Pro Tip:</strong> Use arrow keys or on-screen controls to navigate your jelly character through the obstacles!
+                            </p>
+                            <p class="text-gray-600 text-sm">
+                                Master the timing of each jump and movement to successfully navigate through increasingly complex level designs that will challenge even the most skilled players.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container mx-auto px-4 py-8 md:py-16">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
+                    Why You'll Love Jellydash - Game Features
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Lightning Fast</h3>
+                        <p class="text-gray-600 mb-3">No waiting, no loading. Jump straight into the action in seconds!</p>
+                        <p class="text-gray-500 text-sm">Experience instant gameplay with our streamlined browser-based technology that eliminates frustrating loading screens and gets you right into the heart-pounding action.</p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div class="w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Quick Sessions</h3>
+                        <p class="text-gray-600 mb-3">Perfect for breaks! Play a level or two in just a few minutes.</p>
+                        <p class="text-gray-500 text-sm">Designed for modern lifestyles, each level can be completed in short bursts, making it perfect for coffee breaks, commutes, or whenever you have a spare moment for gaming entertainment.</p>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Addictive Fun</h3>
+                        <p class="text-gray-600 mb-3">Challenging levels that keep you coming back for more!</p>
+                        <p class="text-gray-500 text-sm">With progressively difficult levels, secret paths to discover, and achievements to unlock, Jellydash offers endless replayability that will keep you engaged and entertained for countless hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-4 py-8 md:py-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+                    About Jellydash - The Ultimate Action Adventure
+                </h2>
+                <div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8">
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Jellydash is an exciting and challenging action-platformer that tests your reflexes and timing skills to their absolute limits. Take control of adorable, bouncy jelly characters as they navigate through increasingly difficult levels filled with tricky obstacles, deadly traps, and valuable collectibles that will keep you engaged for hours on end.
+                    </p>
+
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Developed with precision and attention to detail, Jellydash combines the best elements of classic platforming games with modern action mechanics. The game features smooth physics-based movement that makes controlling your jelly character feel natural and responsive, while the gradually increasing difficulty curve ensures that players of all skill levels will find the perfect balance of challenge and enjoyment.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">How to Play - Master the Basics</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    Use arrow keys to move your jelly character with precision and control
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    Time your movements carefully to avoid moving obstacles and hazards
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    Avoid obstacles and hazards that become increasingly complex as you progress
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    Collect items for bonus points and unlock special achievements
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    Learn the patterns of each level to find the most efficient path to victory
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Game Features - What Makes It Special</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    Multiple challenging levels with unique obstacles and mechanics
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    Cute and colorful jelly characters with unique personalities
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    Smooth physics-based gameplay that feels natural and responsive
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    Completely free to play with no hidden costs or microtransactions
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    Progressive difficulty that keeps players engaged and challenged
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Why Jellydash Stands Out</h3>
+                        <p class="text-gray-600 mb-4">
+                            Unlike many browser games that rely on repetitive mechanics, Jellydash offers a fresh and innovative approach to action platforming. Each level is carefully crafted to present unique challenges that require both quick reflexes and strategic thinking. The game's physics engine creates realistic jelly movement that adds an extra layer of challenge and satisfaction when you successfully navigate through difficult sections.
+                        </p>
+                        <p class="text-gray-600">
+                            Whether you're a casual gamer looking for a fun way to pass the time or a dedicated player seeking to master every level and achieve the highest scores, Jellydash provides an accessible yet deeply rewarding experience that will keep you coming back for just one more try.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold">J</span>
+                    </div>
+                    <span class="text-lg font-semibold">Jellydash</span>
+                </div>
+                <p class="text-gray-400 mb-2">
+                    Play Jellydash online for free. No downloads required.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    © 2024 jellydash.site. All rights reserved. Game provided by CrazyGames.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
