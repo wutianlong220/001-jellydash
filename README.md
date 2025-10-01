@@ -86,7 +86,7 @@ python3 -m http.server 8000
 如有问题或建议，欢迎通过以下方式联系：
 
 - 项目仓库：[GitHub链接]
-- 游戏链接：https://www.crazygames.com/game/jelly-dash-uki
+- 游戏链接：[jellydash游戏](https://jellydash.site)
 
 ---
 
